@@ -4,12 +4,12 @@ Probabilistic decoding of future motor intent from cortical population activity 
 
 ## Setup with Miniconda or Anaconda
 
-The recommended setup uses the Conda environment described in [environment.yml](environment.yml). From the repository directory (`CS6956-MDN`), open Anaconda Prompt or a new VS Code PowerShell terminal and run:
+The recommended setup uses the Conda environment described in [environment.yml](environment.yml). From the repository directory (`mdn-motor-decoding`), open Anaconda Prompt or a new VS Code PowerShell terminal and run:
 
 ```text
 conda env create -f environment.yml
-conda activate cs6956-mdn
-python -m ipykernel install --user --name cs6956-mdn --display-name "Python (CS6956-MDN)"
+conda activate mdn-motor-decoding
+python -m ipykernel install --user --name mdn-motor-decoding --display-name "Python (MDN Motor Decoding)"
 ```
 
 If the environment already exists and the YAML file has changed, update it with:
@@ -18,7 +18,7 @@ If the environment already exists and the YAML file has changed, update it with:
 conda env update -f environment.yml --prune
 ```
 
-In VS Code, open `mdn_2d_starter.ipynb`, select the `Python (CS6956-MDN)` kernel, and run the notebook cells from top to bottom.
+In VS Code, open `mdn_future_motor_intent.ipynb`, select the `Python (MDN Motor Decoding)` kernel, and run the notebook cells from top to bottom.
 
 To leave the Conda environment:
 
@@ -29,7 +29,7 @@ conda deactivate
 To remove the environment completely:
 
 ```text
-conda env remove --name cs6956-mdn
+conda env remove --name mdn-motor-decoding
 ```
 
 ## Notebook

@@ -1,16 +1,24 @@
-name: cs6956-mdn
+name: mdn-motor-decoding
 channels:
   - pytorch
   - nvidia
   - conda-forge
 dependencies:
-  - python=3.12
+  - python=3.9
   - pytorch
   - pytorch-mutex=1.0=cuda # cuda or cpu depending on your system
-  - pytorch-cuda=13.3 # Comment out this line if you are using CPU, use `nvidia-smi` to check your CUDA version if you are using GPU  
+  - pytorch-cuda=12.4 # PyTorch bundles this runtime; the installed NVIDIA driver can be newer.
   - numpy
   - matplotlib
   - jupyterlab
   - ipykernel
-  - pandas
+  - pandas=1.3.4
+  - scipy
+  - scikit-learn
+  - h5py
+  - pynwb
   - xlrd
+  - pip
+  - pip:
+      - nlb-tools==0.0.4
+      - dandi
