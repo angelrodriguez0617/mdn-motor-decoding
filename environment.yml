@@ -1,0 +1,16 @@
+name: cs6956-mdn
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pytorch
+  - pytorch-mutex=1.0=cuda # cuda or cpu depending on your system
+  - pytorch-cuda=13.3 # Comment out this line if you are using CPU, use `nvidia-smi` to check your CUDA version if you are using GPU  
+  - numpy
+  - matplotlib
+  - jupyterlab
+  - ipykernel
+  - pandas
+  - xlrd
