@@ -1,0 +1,20 @@
+{
+  "config": {
+    "bin_size_ms": 20,
+    "window_size_ms": 100,
+    "horizon_size_ms": 0,
+    "window_bins": 5,
+    "horizon_bins": 0,
+    "n_components": 5
+  },
+  "metrics": {
+    "baseline_rmse": 64.8929214477539,
+    "baseline_mae": 22.85665512084961,
+    "baseline_r2": 0.7636088999648442,
+    "mdn_rmse_from_mean": 71.70514678955078,
+    "mdn_mae_from_mean": 24.35047721862793,
+    "mdn_r2_from_mean": 0.7113728686916521,
+    "mdn_nll": 6.671027183532715,
+    "mdn_90pct_interval_coverage": 0.8117807684805929
+  }
+}
